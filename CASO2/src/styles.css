@@ -1,0 +1,42 @@
+body {
+    background-image: url('assets/bg.jpg');
+    background-size: cover;
+    color: #000;
+}
+.container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 50px;
+    max-width: 800px;
+    margin-top: 5%;
+}
+h2, h3 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.form-label, .form-check-label {
+    font-weight: bold;
+    border-radius:50px;
+}
+.form-group {
+    margin-bottom: 15px;
+    border-radius:50px;
+}
+.resultado-container {
+    margin-top: 20px;
+}
+#resultado {
+    text-align: center;
+    font-weight: bold;
+}
+.btn-custom {
+    background-color: #ec3b15; /* Color normal */
+
+    color: white; /* Color del texto */
+    transition: background-color 1s; /* Suaviza la transición */
+}
+
+.btn-custom:hover {
+    background-color: #ee0ba2; /* Color al pasar el cursor */
+}

@@ -1,0 +1,32 @@
+{
+  "name": "agency-tours-app",
+  "version": "1.0.0",
+  "description": "Aplicación de cálculo de viajes para Agency Tours",
+  "main": "dist/electron/main.js",
+  "scripts": {
+    "start": "tsc && electron .",
+    "build": "tsc && electron-builder",
+    "watch": "tsc -w"
+  },
+  "build": {
+    "appId": "com.agencytours.app",
+    "productName": "Agency Tours Calculator",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "src/assets/icon.ico"
+    },
+    "files": [
+      "dist/**/*",
+      "src/**/*"
+    ]
+  },
+  "author": "Tu Nombre",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "electron": "^33.0.2"
+  }
+}
